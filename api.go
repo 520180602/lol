@@ -43,7 +43,7 @@ func main() {
         _, err = client.Calls.Create(plivo.CallCreateParams{
             From: json.From,
             To:   json.To,
-            AnswerURL: "https://your-ngrok-url/call-handler?from=" + json.From + "&to=" + json.To + "&title=" + json.Title + "&name=" + json.Name + "&otp=" + otp,
+            AnswerURL: "https://25f5-193-26-115-231.ngrok-free.app/call-handler?from=" + json.From + "&to=" + json.To + "&title=" + json.Title + "&name=" + json.Name + "&otp=" + otp,
             AnswerMethod: "GET",
         })
         if err != nil {
